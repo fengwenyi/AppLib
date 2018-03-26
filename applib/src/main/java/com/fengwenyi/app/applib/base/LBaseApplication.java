@@ -14,8 +14,6 @@ public class LBaseApplication extends Application {
     // 单一模式
     private static LBaseApplication APP;
 
-    private LBaseApplication () {}
-
     /**
      * 单一实例
      * @return LBaseApplication
