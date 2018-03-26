@@ -1,8 +1,32 @@
-写在前面的话
+# Android Project Library
 
-	作者还是一个Android新手，不足之处，还请指正。
+## Description
 
-## 使用
+AppLib 全称 Android Project Library。
+
+正如名字所说，AppLib帮助你快速构建MVP模式的Android Project，因此你不需要再写AppManager，BaseXXX系列的代码文件。
+
+## Function
+
+* BaseXXX 系列
+
+* 日期时间选择弹窗
+
+* 模糊进度加载弹窗
+
+* 值回调接口
+
+* 常量
+
+* 字体图标类
+
+* 日志工具类
+
+* Toast工具类
+
+* 其他常用工具类
+
+## Use
 
 Step 1. Add the JitPack repository to your build file
 	
@@ -16,46 +40,32 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.fengwenyi:AppLib:0.0.13'
+	        // 关于版本号的问题，请直接咨询 author
+	        compile 'com.github.fengwenyi:AppLib:1.0.1'
 	}
 
-## 版本更新说明
+## API
 
-##### ● 第 22 版【日期：2018年1月25日，版本号：0.0.14】
+* MVP 模式
 
-```
-	1、重新整理
-```
+* 日期时间弹选择弹窗
 
-##### ● 第 21 版【日期：2018年1月10日，版本号：0.0.13】
+* 模糊进度弹窗
 
-```
-	1、增加了日期-时间选择对话框
-```
+* 值回调接口
 
-##### ● 第 20 版【日期：2018年1月3日，版本号：0.0.11】
+* 字体图标
 
-```
-	1、一句代码使用字体图标
-	2、自定义字体图标库
-```
+* Log
 
-##### ● 第 19 版【日期：2017年12月28日，版本号：0.0.9】
+* Toast
 
-```
-	1、支持MVP架构
-```
+## Other
 
-##### ● 第 18 版【日期：2017年12月27日，版本号：0.0.1】
+[JavaLib](https://github.com/fengwenyi/JavaLib)
 
-```
-	1、重构
-	2、提供BaseActivity封装参考
-	3、提供一些常用工具类
-	4、提供一些可调用的接口
-```
 
-## 作者
+## Author
 ```
-	Copyright 2017 Wenyi Feng.
+	Wenyi Feng(xfsy_2015@163.com)
 ```
