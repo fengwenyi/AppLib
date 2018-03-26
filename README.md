@@ -4,7 +4,8 @@
 
 AppLib 全称 Android Project Library。
 
-正如名字所说，AppLib帮助你快速构建MVP模式的Android Project，因此你不需要再写AppManager，BaseXXX系列的代码文件。
+正如名字所说，AppLib帮助你快速构建MVP模式的Android Project，
+因此你不需要再写AppManager，BaseXXX系列的代码文件。
 
 ## Function
 
