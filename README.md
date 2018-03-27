@@ -43,7 +43,7 @@ Step 2. Add the dependency
 
 	dependencies {
 	        // 关于版本号的问题，请直接咨询 author
-	        compile 'com.github.fengwenyi:AppLib:1.0.1'
+	        compile 'com.github.fengwenyi:AppLib:1.0.1.1'
 	}
 
 ## API
