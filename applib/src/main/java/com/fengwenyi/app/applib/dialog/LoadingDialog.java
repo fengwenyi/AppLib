@@ -6,12 +6,16 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.fengwenyi.app.applib.R;
+import com.fengwenyi.app.applib.tool.Constanct;
+import com.fengwenyi.app.applib.tool.IconTextUtil;
 
 /**
- * Dialog loading
+ * Dialog loading_rotate
  * <p>
  *     可以自定义文字，
  *     可以自定义是否文字是否显示，
@@ -93,6 +97,11 @@ public class LoadingDialog extends Dialog {
             } else {
                 tvMsg.setVisibility(View.GONE);
             }
+            TextView tvLoading = view.findViewById(R.id.loading);
+            String path = Constanct.fontsDir + "iconfont_loading.ttf";
+            tvLoading.setTypeface(IconTextUtil.getTypeface(mContext, path));
+            Animation loadingAnimation = AnimationUtils.loadAnimation(mContext, R.anim.loading_rotate);
+            tvLoading.startAnimation(loadingAnimation);
             loadingDialog.setContentView(view);
             loadingDialog.setCancelable(isCancelable);
             loadingDialog.setCanceledOnTouchOutside(isCancelOutside);
