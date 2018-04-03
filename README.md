@@ -62,6 +62,13 @@ Step 2. Add the dependency
 
 * Toast
 
+## WiKi
+
+1、mActivity 和 mContext
+
+在 `LBaseActivity` 和 `LBaseFragment` 中都系统了 mActivity 和 mContext。
+因此在你的 XxxActivity 或 XxxFragment 中，可以直接使用
+
 ## Other
 
 [JavaLib](https://github.com/fengwenyi/JavaLib)

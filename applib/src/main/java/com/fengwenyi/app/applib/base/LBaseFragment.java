@@ -1,5 +1,7 @@
 package com.fengwenyi.app.applib.base;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -16,6 +18,9 @@ public abstract class LBaseFragment<T extends LBasePresenter> extends Fragment {
     protected T presenter;
 
     private Long lastClickTime = 0L;
+
+    public Context mContext;
+    public Activity mActivity;
 
     // 是否快速点击
     private Boolean isFastClick () {
@@ -38,6 +43,9 @@ public abstract class LBaseFragment<T extends LBasePresenter> extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         presenter = initPresenter();
+
+        mActivity = getActivity();
+        mContext = getContext();
 
         init();
 

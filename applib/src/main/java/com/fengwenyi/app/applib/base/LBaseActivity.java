@@ -1,5 +1,6 @@
 package com.fengwenyi.app.applib.base;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,7 +16,8 @@ import com.fengwenyi.app.applib.tool.ToastUtil;
 
 public abstract class LBaseActivity extends AppCompatActivity {
 
-    protected Context context;
+    public Context mContext;
+    public Activity mActivity;
 
     // Init
     public abstract void init ();
@@ -59,7 +61,8 @@ public abstract class LBaseActivity extends AppCompatActivity {
 
         setContentView(getLayout());
 
-        context = this;
+        mContext = this;
+        mActivity = this;
 
         AppManager.newInstance().addActivity(this);
 
